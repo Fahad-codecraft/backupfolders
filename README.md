@@ -6,7 +6,7 @@ This Python script performs backups of a specified directory to another location
 
 - **Backup Functionality:** Automatically copies files from a specified directory to a backup folder.
 - **Exclude Directories:** Allows excluding specific directories from the backup process.
-- **Logging:** Logs the start and completion of each backup operation, including any errors encountered.
+- **Logging:** Logs the start and completion of each backup operation.
 
 ## Getting Started
 
