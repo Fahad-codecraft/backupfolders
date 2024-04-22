@@ -20,7 +20,7 @@ Install the module using:
 - **Windows**:
   - `pip install backupfolders`.
 - **MacOs**:
-  -`pip3 install backupfolders`.
+  - `pip3 install backupfolders`.
 This will install the latest stable release.
 
 ### Usage
