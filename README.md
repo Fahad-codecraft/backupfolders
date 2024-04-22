@@ -35,9 +35,9 @@ destinationPath = r"D:\Backups"
 # exclude folders not to backup
 exclude_folders = [] #if any folder needs to be excluded from backup
 
-backupdir = backupfolders.Backup(mainPath, destinationPath, exclude_folders)
+backupdir = backupfolders.Backup()
 
-backupdir.backup()
+backupdir.backup(mainPath, destinationPath, exclude_folders)
 
 ```
 
