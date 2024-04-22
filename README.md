@@ -31,6 +31,7 @@ mainPath = r"C:\Users\HP\Desktop\New folder (2)\flappy-bird"
 
 # backup directory
 destinationPath = r"D:\Backups"
+
 # exclude folders not to backup
 exclude_folders = [] #if any folder needs to be excluded from backup
 
