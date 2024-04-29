@@ -15,9 +15,6 @@ setuptools.setup(
   url = 'https://github.com/Fahad-codecraft',
   keywords = ['backup', 'folders', 'files'],
   install_requires=[
-          'shutil',
-          'datetime',
-          'filecmp'
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',
