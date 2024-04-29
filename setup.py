@@ -5,7 +5,7 @@ with open("README.md","r") as f:
 
 setuptools.setup(
   name = 'backupfolders',
-  version = '0.3',
+  version = '0.1',
   license='MIT',
   long_description = long_description,
   long_description_content_type = "text/markdown",
@@ -15,6 +15,9 @@ setuptools.setup(
   url = 'https://github.com/Fahad-codecraft',
   keywords = ['backup', 'folders', 'files'],
   install_requires=[
+          'shutil',
+          'datetime',
+          'filecmp'
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',
