@@ -5,7 +5,7 @@ with open("README.md","r") as f:
 
 setuptools.setup(
   name = 'backupfolders',
-  version = '0.5',
+  version = '0.6',
   license='MIT',
   long_description = long_description,
   long_description_content_type = "text/markdown",
