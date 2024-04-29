@@ -55,18 +55,15 @@ class Backup:
                         # File has been modified, replace it
                         shutil.copy2(src_file, dest_file)
                         log_message = f"Updated: {os.path.join(relative_path, file)}"
-                        log_messages.append(log_message)
                         print(log_message)  # Print to terminal
                     else:
                         # File has not been modified, skip
                         log_message = f"Skipped: {os.path.join(relative_path, file)} (Not modified)"
-                        log_messages.append(log_message)
                         print(log_message)  # Print to terminal
                 else:
                     # File does not exist in the backup destination, copy it
                     shutil.copy2(src_file, dest_file)
                     log_message = f"Copied: {os.path.join(relative_path, file)}"
-                    log_messages.append(log_message)
                     print(log_message)  # Print to terminal
 
             # Check for existing folders and files within those folders
@@ -74,13 +71,11 @@ class Backup:
                 if folder in existing_folders:
                     # Folder already exists, skip
                     log_message = f"Skipped folder: {os.path.join(relative_path, folder)}"
-                    log_messages.append(log_message)
                     print(log_message)  # Print to terminal
                 else:
                     # Folder does not exist, create it
                     os.makedirs(os.path.join(backup_subfolder, folder), exist_ok=True)
                     log_message = f"Created folder: {os.path.join(relative_path, folder)}"
-                    log_messages.append(log_message)
                     print(log_message)  # Print to terminal
 
         # Log completion
